@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="rappi">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>RappiTest</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" media="screen,projection">
+  <link rel="stylesheet" href="styles/master.css" media="screen" title="no title">
+  <link rel="icon" href="assets/images/rappi_favicon.png">
+
+</head>
+<body ng-controller="mainController as vm">
+  <nav class="redRappi" role="navigation">
+
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 ui-sref="home" class="header center teal-text text-lighten-2">Rappi Shop</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Texto de la tienda</h5>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <div ui-view></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="footer-copyright">
+      <div class="container">
+        Footer
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/init.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="assets/js/angular.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
+
+
+  <script src="scripts/app.js" charset="utf-8"></script>
+
+  <script src="scripts/filters/filter.js" charset="utf-8"></script>
+  <script src="scripts/services/service.js" charset="utf-8"></script>
+  <script src="scripts/controllers/controller.js" charset="utf-8"></script>
+
+</body>
+</html>
