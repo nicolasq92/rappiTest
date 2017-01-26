@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col s8 m8 l8">
+    <ul class="collection" ng-repeat="article in vm.carList track by $index">
+      <li class="collection-item avatar">
+        <img ng-src="{{article.img}}" alt="" class="circle">
+        <p class="title left-align">{{article.name}}</p>
+        <p class="left-align">{{article.price | currency}}</p>
+        <p class="left-align truncate">{{article.description}}</p>
+        <a href ng-click="vm.deleteElement($index)" class="secondary-content"><i class="material-icons">clear</i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="col s4 m4 l4">
+    <h4 ng-hide="vm.total != []">You dont have any articles in your cart</h4>
+    <h4 ng-hide="vm.total == []">Total</h4>
+    <h5 ng-hide="vm.total == []">{{vm.total | currency}}</h5>
+    <a  ng-hide="vm.total == []" class="waves-effect waves-light btn" ng-click="vm.buy()">Buy</a>
+  </div>
+</div>

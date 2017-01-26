@@ -1,0 +1,152 @@
+/* Custom Stylesheet */
+/**
+* Use this file to override Materialize files so you can update
+* the core Materialize files in the future
+*
+* Made By MaterializeCSS.com
+*/
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+/*Custom CSS Nicolas Quijada*/
+
+.redRappi{
+  background-color: #fd6250 !important;
+}
+.teal{
+  background-color: #fd6250 !important;
+  padding-top: 0px !important
+}
+
+.border-bottom{
+  border-bottom: 1px solid black !important;
+}
+
+.parallax img{
+  max-width: 100%;
+}
+
+#index-banner > div.section.no-pad-bot > div{
+  background-color: rgba(0,0,0,0.18) !important;
+}
+
+.section.no-pad-bot{
+  padding-top: 5rem !important;
+}
+
+.hidden{
+  overflow: hidden;
+}
+
+.teal-text.text-lighten-2{
+  color:rgba(255,255,255,0.8) !important;
+}
+
+.marginTop{
+  margin-top: 3%;
+}
+
+.margin1Top{
+  margin-top: 1%;
+}
+
+.margin-top{
+  margin-top: 10px;
+}
+
+nav ul a:hover{
+  background-color: rgba(0,0,0,0.0) !important;
+}
+
+.btn{
+  width:100%;
+  padding: 0 !important;
+  z-index: 0;
+}
+
+.btn i{
+  line-height: normal;
+}
+
+.card{
+  z-index: 0;
+}
+
+nav{
+  z-index: 1;
+  position: fixed;
+}
+
+.card-reveal{
+  display: none;
+  transform: translateY(0px);
+}
+
+.justifyText{
+text-align : justify;
+}
+
+.rotate{
+  -moz-transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.rotate:hover{
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}

@@ -1,0 +1,126 @@
+<div class="row">
+  <div class="col s3 m3 l3 ">
+    <a href ng-click="vm.options('drinks')"><img class="responsive-img" src="assets/images/imagen4.jpg"></a>
+    <h5>Drinks</h5>
+  </div>
+  <div class="col s3 m3 l3">
+    <a href ng-click="vm.options('lunch')"><img class="responsive-img" src="assets/images/imagen5.jpg"></a>
+    <h5>Lunch</h5>
+  </div>
+  <div class="col s3 m3 l3">
+    <a href ng-click="vm.options('food')"><img class="responsive-img" src="assets/images/imagen3.jpg"></a>
+    <h5>Food</h5>
+  </div>
+  <div class="col s3 m3 l3">
+    <a href ng-click="vm.options('sea')"><img class="responsive-img" src="assets/images/imagen1.jpg"></a>
+    <h5>Sea</h5>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col s12 m2 l2">
+    <div class="row">
+      <div class="input-field col s12">
+        <input value="" ng-model="vm.buscador" ng-change="vm.buscar()" id="buscador" type="text" class="validate">
+        <label class="active" for="first_name2">Search Items</label>
+      </div>
+      <div class="col s12 marginTop">
+        <a ng-click="vm.showFilters()" class="waves-effect waves-light btn">Filters</a>
+      </div>
+    </div>
+
+    <div class="row" ng-show="vm.show == true">
+
+      <div class="row center">
+        <h5>Filters</h5>
+        <div class="col s12 m12 l12">
+          <a class="waves-effect waves-light btn margin-top left-align" ng-click="vm.options(undefined)">
+          All Products
+          </a>
+        </div>
+        <div class="col s12 m12 l12">
+          <a class="waves-effect waves-light btn margin-top" ng-click="vm.options('available')">
+            Available
+          </a>
+        </div>
+        <div class="col s12 m12 l12">
+          <a class="waves-effect waves-light btn margin-top center-align" ng-click="vm.options('notAvailable')">
+            Unavailable
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <a class="waves-effect waves-light btn margin-top" ng-click="vm.options('bestSeller')">Best Seller</a>
+        </div>
+        <div class="col s12 m12 l12">
+          <a class="waves-effect waves-light btn margin-top" ng-click="vm.options('mayor')">Price > 30000</a>
+        </div>
+        <div class="col s12 m12 l12">
+          <a class="waves-effect waves-light btn margin-top" ng-click="vm.options('minor')">Price < 10000</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <h5>Order</h5>
+        <div class="col s12 m12 l12">
+          <a class="waves-effect waves-light btn margin-top" ng-click="vm.functOrderName()">Name</a>
+        </div>
+        <div class="col s12 m12 l12">
+          <a class="waves-effect waves-light btn margin-top" ng-click="vm.orderPrice('orderByPrice')">Price</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m10 l10">
+    <div class="row">
+      <div class="col s12 m6 l4" ng-repeat="products in vm.products | myfilter: vm.option:vm.value | orderFilter: vm.order:vm.reverse  | orderBy: vm.orderName">
+        <div class="card sticky-action hoverable hidden">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" ng-src="{{products.img}}">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">{{products.name}}</span>
+            <div class="row">
+              <div class="col s4 m4 l4 left-align">
+                <p>Price:</p>
+                <p>{{products.price}}</p>
+              </div>
+              <div class="col s4 m4 l4">
+                <img class="marginTop" ng-show="{{products.available == true}}" alt="available" title="Available" src="assets/images/ic_check_black_24px.svg"/>
+                <p ng-show="{{products.available == true}}">Available</p>
+                <img class="marginTop" ng-show="{{products.available == false}}" alt="unavailable" title="Unavailable" src="assets/images/ic_close_black_24px.svg"/>
+                <p ng-show="{{products.available == false}}">Unavailable</p>
+              </div>
+              <div class="col s4 m4 l4">
+                <img class="marginTop rotate" ng-show="{{products.best_seller == true}}" alt="Best Seller" title="Best Seller" src="assets/images/ic_star_black_36px.svg"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-action">
+            <button class="btn waves-effect waves-light" type="button" ng-disabled="products.available == false" ng-click="vm.addToCard(products)" name="action">Add to cart <i class="material-icons center">add_shopping_cart</i></button>
+          </div>
+
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">{{products.name}}<i class="material-icons right">close</i></span>
+            <p class="justifyText flow-text">{{products.description}}</p>
+            <div class="row">
+              <div class="col s6 m6 l6" ng-repeat="categories in products.categories">
+                <div class="chip" ng-if="categories == 1">Drinks</div>
+                <div class="chip" ng-if="categories == 2">Lunch</div>
+                <div class="chip" ng-if="categories == 3">Food</div>
+                <div class="chip" ng-if="categories == 4">Sea</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="toast-container"></div>

@@ -14,7 +14,12 @@
 </head>
 <body ng-controller="mainController as vm">
   <nav class="redRappi" role="navigation">
-
+    <div class="nav-wrapper container">
+      <a id="logo-container" ui-sref="home" class="brand-logo hide-on-med-and-down margin1Top"><img src="assets/images/logo-rappi-white.svg" alt="" /></a>
+      <ul class="right">
+        <a id="logo-container" ui-sref="shoppingCar" class="brand-logo margin1Top"><img src="assets/images/ic_shopping_cart_white_36px.svg" alt="" /></a>
+      </ul>
+    </div>
   </nav>
 
   <div id="index-banner" class="parallax-container">
@@ -23,12 +28,12 @@
         <br><br>
         <h1 ui-sref="home" class="header center teal-text text-lighten-2">Rappi Shop</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Texto de la tienda</h5>
+          <h5 class="header col s12 light">Lo que necesites, lo que se te antoje, en minutos 24/7</h5>
         </div>
         <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="assets/images/imagen2.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
   <div class="container">
@@ -45,9 +50,27 @@
   </div>
 
   <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4 l4 marginTop">
+          <h5 class="white-text center-align">Define Custom EndPoint</h5>
+        </div>
+        <div class="col s12 m6 l6">
+          <div class="input-field col s12">
+            <input placeholder="" ng-model="vm.customUrl" id="" type="text" class="validate border-bottom">
+          </div>
+        </div>
+        <div class="col s12 m2 l2 center-align marginTop">
+          <a class="waves-effect waves-light btn" ng-click="vm.asignarUrl(vm.customUrl)">Update</a>
+        </div>
+      </div>
+    </div>
     <div class="footer-copyright">
       <div class="container">
-        Footer
+        Made by
+        <a class="white-text text-lighten-3" href="https://ve.linkedin.com/in/nicolasquijada27">Nicolas Quijada</a>
+        for
+        <a class="white-text text-lighten-3" href="https://www.rappi.com/">Rappi</a>
       </div>
     </div>
   </footer>
@@ -62,12 +85,21 @@
   <script src="assets/js/angular.min.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
-
+  <script src="assets/js/uiRouter.js" charset="utf-8"></script>
+  <script src="assets/js/ngStorage.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script> -->
 
   <script src="scripts/app.js" charset="utf-8"></script>
 
   <script src="scripts/filters/filter.js" charset="utf-8"></script>
+  <script src="scripts/filters/orderByPrice.js" charset="utf-8"></script>
+
+  <script src="scripts/services/shoppingCar.js" charset="utf-8"></script>
   <script src="scripts/services/service.js" charset="utf-8"></script>
+  <script src="scripts/services/defineurl.js" charset="utf-8"></script>
+
+  <script src="scripts/controllers/mainController.js" charset="utf-8"></script>
+  <script src="scripts/controllers/carController.js" charset="utf-8"></script>
   <script src="scripts/controllers/controller.js" charset="utf-8"></script>
 
 </body>
