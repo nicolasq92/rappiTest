@@ -13,13 +13,17 @@
         this.postElements = functionPostElements;
         this.setLocalStorage = setLocalStorage;
         this.deleteElement = deleteElement;
+        this.numbersOfElements = numbersOfElements;
+
 
         function setLocalStorage(){
           $localStorage.products = [];
+          numbersOfElements();
           return 0;
         }
 
         function functionGetElements() {
+          numbersOfElements();
           return $localStorage.products;
         }
 
@@ -31,18 +35,26 @@
           }else{
             arrayResult = $localStorage.products;
           }
-          
+
           arrayResult.push(article);
           $localStorage.products = arrayResult;
-          $localStorage.quantity += 1;
+          numbersOfElements();
 
           return 0;
+        }
+
+        function numbersOfElements(){
+
+          var arrayResult = $localStorage.products;
+
+        return arrayResult.length;
         }
 
         function deleteElement(id){
           var arrayResult = $localStorage.products;
           arrayResult.splice(id,1);
           $localStorage.products = arrayResult;
+          numbersOfElements();
           return arrayResult;
         }
     };

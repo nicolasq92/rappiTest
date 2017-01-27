@@ -24,7 +24,6 @@
         function getElements(){
           vm.carList = rappiShoppingService.getElements();
           angular.forEach(vm.carList, function(item) {
-            console.log(item);
             vm.total += parseFloat(item.price);
         });
       }
@@ -44,7 +43,7 @@
         function buy(){
           var post = rappiShoppingService.setLocalStorage();
           if(post == 0){
-            Materialize.toast("Buy Success", 4000);
+            Materialize.toast("Buy Success", 3000);
             $state.go('home');
           }
 
