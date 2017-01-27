@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col s8 m8 l8">
+  <div class="col s8 m8 l8" ng-hide="vm.total == []">
     <ul class="collection" ng-repeat="article in vm.carList track by $index">
       <li class="collection-item avatar">
         <img ng-src="{{article.img}}" alt="" class="circle">
@@ -10,10 +10,13 @@
       </li>
     </ul>
   </div>
-  <div class="col s4 m4 l4">
-    <h4 ng-hide="vm.total != []">You dont have any articles in your cart</h4>
-    <h4 ng-hide="vm.total == []">Total</h4>
-    <h5 ng-hide="vm.total == []">{{vm.total | currency}}</h5>
-    <a  ng-hide="vm.total == []" class="waves-effect waves-light btn" ng-click="vm.buy()">Buy</a>
+  <div class="col s4 m4 l4" ng-hide="vm.total == []">
+    <h4>Total</h4>
+    <h5>{{vm.total | currency}}</h5>
+    <a class="waves-effect waves-light btn" ng-click="vm.buy()">Buy</a>
+  </div>
+
+  <div class="col s12 m12 l12" ng-hide="vm.total != []">
+    <h4>You don't have articles in you shopping cart</h4>
   </div>
 </div>

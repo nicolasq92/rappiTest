@@ -98,17 +98,22 @@ no afecta el correcto funcionamiento del sistema.
 ![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/2.png)
 ![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/3.png)
 
-![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/6.png)
+![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/22.png)
 
 ### Principal Movil
 
-![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/7.png)
-![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/8.png)
+![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/17.png)
+![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/23.png)
+
+
+## Principal Ipad
+![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/18ipad.png)
 
 ### Carrito de Compras
 
-![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/4.png)
-![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/5.png)
+![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/11.png)
+![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/19.png)
 
 ### Carrito de Compras Movil
-![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/9.png)
+![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/16.png)
+![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/17.png)
