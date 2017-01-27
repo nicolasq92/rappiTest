@@ -116,4 +116,4 @@ no afecta el correcto funcionamiento del sistema.
 
 ### Carrito de Compras Movil
 ![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/16.png)
-![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/17.png)
+![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/15.png)
