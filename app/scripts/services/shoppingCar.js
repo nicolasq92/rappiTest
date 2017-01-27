@@ -47,6 +47,10 @@
 
           var arrayResult = $localStorage.products;
 
+          if (arrayResult == "" || arrayResult == [] || arrayResult == undefined) {
+            return 0;
+          }
+
         return arrayResult.length;
         }
 
