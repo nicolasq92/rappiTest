@@ -98,8 +98,10 @@ no afecta el correcto funcionamiento del sistema.
 ![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/2.png)
 ![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/3.png)
 
-### Principal Movil
 ![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/6.png)
+
+### Principal Movil
+
 ![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/7.png)
 ![alt tag](https://dl.dropboxusercontent.com/u/27081989/rappiFrontEndColombia/8.png)
 
