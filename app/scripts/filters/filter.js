@@ -44,23 +44,6 @@
           }
         });
 
-        // if(condition == 'orderByPrice'){
-        //     var field = 'price';
-        //     orderPrice(field);
-        // }
-        //
-        // function orderPrice(field){
-        //   if(reverse == false){
-        //     filtered.sort(function(a, b){
-        //       return (parseInt(a[field]) > parseInt(b[field]) ? 1 : -1);
-        //     })
-        //   }else if (reverse == true) {
-        //     filtered.sort(function(a, b){
-        //       return (parseInt(a[field]) < parseInt(b[field]) ? 1 : -1);
-        //     });
-        //   }
-        // };
-
         return filtered;
       };
     });
